@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from arrow.IA_arrow import analyze_arrow
+from arrow.AI_arrow import analyze_arrow
 from arrow.detect_arrow import devolver_flecha
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt 

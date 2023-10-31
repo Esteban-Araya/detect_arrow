@@ -4,8 +4,9 @@ import numpy as np
 from base64 import b64decode
 from PIL import Image
 import io
+import os
 
-cnn = load_model("/home/esteban/Programas/AI/arrows/CC64-CC128-CD256.h5", compile=False)
+cnn = load_model(os.path.abspath("arrow/AIs/CC64-CC128-CD256.h5"), compile=False)
 
 def decode_image(image):
     image = b64decode(image)
