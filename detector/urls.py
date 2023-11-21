@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from arrow.views import flecha, data,ai_arrow
+from arrow.views import flecha, data,ai_arrow,data_circle
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('flecha/', flecha),
     path('arrow/', ai_arrow),
     path('data/', data),
+    path('circle/', data_circle),
 ]
